@@ -1,0 +1,4 @@
+# git.yaml
+---
+ -name : Install git
+  yum : name=git state=present

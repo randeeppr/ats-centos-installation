@@ -1,0 +1,4 @@
+# wget.yaml
+---
+- name : Install wget package
+  yum : name=wget state=present

@@ -1,0 +1,9 @@
+# files.yamn
+---
+- name : Create a directory /opt/ats
+  -file :
+   path = /opt/ats
+   state = directory
+   mode = 0755
+   owner = ats
+   group = root
