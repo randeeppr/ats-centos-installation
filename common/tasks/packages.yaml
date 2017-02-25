@@ -1,0 +1,29 @@
+# packages.yaml
+---
+ - name : Install necessary packages for ats compilation
+   yum: name={{item}} state=installed
+   - with_items:
+     - pkgconfig 
+     - libtool 
+     - gcc  
+     - make 
+     - openssl 
+     - tcl
+     - expat 
+     - pcre 
+     - libcap 
+     - flex
+     - hwloc 
+     - lua 
+     - curses  
+     - curl  
+     - git 
+     - autoconf  
+     - automake 
+     - libxml2 
+     - gcc-c++ 
+     - openssl-devel  
+     - tcl-devel 
+     - expat-devel 
+     - libxml2-devel 
+     - pcre-devel 
