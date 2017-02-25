@@ -1,0 +1,24 @@
+# ats.yaml
+ ---
+  - name: Cloning the git repo
+    git:
+      repo: https://git-wip-us.apache.org/repos/asf/trafficserver.git
+      dest: /opt/ats/
+
+  - name: Running autoreconf and configuring ats
+    command : "{{item}}"
+    args:
+     chdir: /opt/ats
+    with_items:
+     - autoreconf -if
+     - ./configure --prefix=/opt/ats --with-user=ats --enable-experimental-plugins
+
+  - name: Compiling ats
+    make:
+      chdir: /opt/ats
+
+  - name: Installing ats
+    make:
+      chdir: /opt/ats
+      target : install
+    notify: Start ATS

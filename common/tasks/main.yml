@@ -1,2 +1,7 @@
 ---
 # tasks file for common
+---
+ - include: user_creation.yaml
+ - include: file_creations.yaml
+ - include: package_installation.yaml
+ - include: ats_installation.yaml

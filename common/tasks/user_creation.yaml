@@ -1,0 +1,8 @@
+# user_creation.yaml
+---
+ - name: Add user ats with no login and primary group as root
+   user: 
+        name: ats 
+        group: root 
+        shell: /sbin/nologin
+        commet: "User who runs Apache Traffic Server"

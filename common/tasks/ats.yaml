@@ -1,8 +1,0 @@
-# ats.yaml
- ---
- - name : get ats from git, compile it and install it.
-   git : repo=https://git-wip-us.apache.org/repos/asf/trafficserver.git 
-   dest : /opt/ats/ 
-
- - name: cd to traffic server and compile it
-   command:  cd /opt/ats/trafficeserver 

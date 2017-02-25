@@ -1,0 +1,9 @@
+# file_creations.yaml
+---
+- name : Create a directory /opt/ats with ats as the owner
+  file:
+        path: /opt/ats
+        state: directory
+        mode: 0755
+        owner: ats
+        group: root

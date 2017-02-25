@@ -1,4 +1,0 @@
-# user.yaml
----
- - name: Add user ats
-   user: name=ats groups=root shell=/sbin/nologin
